@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+}
+.imageDiv{
+    width: 230px;
+    display: flex;
+    justify-content: center;
+}
+.image{
+    display:inline-block;
+    height: 150px;
+    display:flex;
+    border-radius: 0px 0px 0px 10px;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.productsSale{
+background-color: white;
+display: flex;
+border-radius: 0px 0px 10px 10px;
+justify-content: space-around;
+padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.productHeader{
+    background-color: #191C28;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.productInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    width: 120px;
 }
 
-.App-link {
-  color: #61dafb;
+.mainPage{
+    background-color: #A4F6EF;  
+    padding: 20px;
+   ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.mainNav{
+    background-color: #191C28;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navButton{
+    background-color: #04c8b4;
+    border-radius: 2px;
+    border-color: #04c8b4;
+    color: white;
+    font-weight: bolder;
+    height: 40px;
+    width: 200px;
+    font-size: medium;
+    transition-duration: 0.3s;
+}
+.navButton:hover{
+    background-color: #A4F6EF;
+    border-color: #A4F6EF;
+    color: #191C28;
+    cursor: pointer;
+
+}
+
+.otro{
+    background-color: #A4F6EF;
+    color:#191C28;
+    border:#8B898B;
+}
+
+.addOneButton{
+    margin: 2px;
+    border: 1px solid #8B898B;
+    border-radius: 5px;
+    height: 24px;
+    text-align: center;
+    transition-duration: 0.3s;
+
+}   
+.addOneButton:hover{
+    background-color: #04c8b4;
+    border-color: #04c8b4;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.addInput{
+    margin: 2px;
+    border: 1px solid #8B898B;
+    border-radius: 5px;
+    height: 24px;
+    text-align: center;
+    width: 45px;
+}
+
+.addButton{
+    background-color: #04c8b4;
+    color: white;
+    margin: 2px;
+    font-weight: bolder;
+    font-size: small;
+    border-radius: 5px;
+    height: 24px;  
+    text-align: center;
+    border-color: white;
+    transition-duration: 0.3s;
+
+}   
+.addButton:hover{
+    background-color: #A4F6EF;
+    color:#191C28;
+    cursor: pointer;
+}
+
+.buttonsDiv{
+    display: flex;
+    margin: 5px;
+}
+
+.cartContainer{
+background-color: #A4F6EF;
+padding: 20px;
+}
+
+.gridContainer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 2.5fr 1fr;
+    gap: 1px;
+    grid-auto-rows: minmax(40px,auto);
+    border-radius: 5px; 
+}
+.insideGridHeader{
+    background-color: #191C28;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.insideGridHeaderLeft{
+    background-color: #191C28;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 5px 0px 0px 0px;
+}
+
+.insideGridHeaderRight{
+    background-color: #191C28;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 0px 5px 0px 0px;
+}
+
+.insideGrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+ .insideGrid+.insideGrid{
+    border-top: solid #ecebeb;
+    border-width: 1px;
+ }
+
+ .displayNone{
+     display:none;
+
+ }
+
+ .linkClass{
+  text-decoration: none;
+  color:inherit;
 }
